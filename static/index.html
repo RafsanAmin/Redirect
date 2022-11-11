@@ -8,7 +8,14 @@
   </head>
   <body>
     <h1>Links has been changed</h1>
+    <h4>
+      To go to your url or link or post
+      <a id="h" href="https://rafpost.onrender.com">https://rafpost.onrender.com</a>
+    </h4>
+    <br />
+
     <p>For Rafpost go to <a href="https://rafpost.onrender.com">https://rafpost.onrender.com</a></p>
+
     <br />
     <p>
       For TodoApp go to
@@ -17,4 +24,9 @@
       >
     </p>
   </body>
+  <script>
+    let url = window.location.href.replace('herokuapp', 'onrender');
+    document.getElementById('h').innerHTML = url;
+    document.getElementById('h').href = url;
+  </script>
 </html>
